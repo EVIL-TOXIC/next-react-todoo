@@ -1,0 +1,8 @@
+{
+    "[javascript]": {
+        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    },
+    "[postcss]": {
+        "editor.defaultFormatter": "stylelint.vscode-stylelint"
+    }
+}
