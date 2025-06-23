@@ -24,7 +24,7 @@ const page = () => {
         <h4 className="text-3xl font-bold">{task.title}</h4>
         <h5 className="text-3xl font-bold">{task.desc}</h5>
         <button onClick= {(index) => deleteHandler(index)}
-          className="bg-red-700 text-white px-4 py-2 m-2 rounded-tr-xl rounded-bl-xl hover:bg-red-50 text-2xl font-bold">
+          className="bg-red-700 text-white  px-5 py-4 m-2 rounded-tr-xl rounded-bl-xl hover:bg-red-70 text-2xl font-bold">
           DELETE
         </button>
       </li>
