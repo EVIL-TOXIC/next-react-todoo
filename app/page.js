@@ -4,7 +4,7 @@ import React, { useState } from "react";
 const page = () => {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
-  const [maintask, setmaintask] = useState([" "]);
+  const [maintask, setmaintask] = useState([]);
   const submithandler = (e) => {
     e.preventDefault();
     setmaintask([...maintask, { title, desc }]);
@@ -17,14 +17,14 @@ const page = () => {
     setmaintask(copytask);
     
   }
-  let rendertask = <h2 className="text-4xl">🙄🙄 NO TASK ADDED 🙄🙄</h2>;
+  let rendertask = <h2 className="text-4xl font-bold">🙄🙄 NO TASK ADDED 🙄🙄</h2>;
   if(maintask.length > 0) {
     rendertask = maintask.map((task, index) => (
       <li key = {index} className="text-2xl m-2 flex items-center justify-between">
         <h4 className="text-3xl font-bold">{task.title}</h4>
         <h5 className="text-3xl font-bold">{task.desc}</h5>
         <button onClick= {(index) => deleteHandler(index)}
-          className="bg-red-700 text-white  px-5 py-4 m-2 rounded-tr-xl rounded-bl-xl hover:bg-red-70 text-2xl font-bold">
+          className="bg-rose-950 text-white  px-5 py-4 m-2 rounded-tr-xl rounded-bl-xl hover:bg-rose-800 text-2xl font-bold">
           DELETE
         </button>
       </li>
