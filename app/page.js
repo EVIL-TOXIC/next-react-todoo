@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 const page = () => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState(".this.props.navbar");
   const [desc, setDesc] = useState("");
   const [maintask, setmaintask] = useState([]);
   const submithandler = (e) => {
