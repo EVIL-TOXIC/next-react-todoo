@@ -42,7 +42,7 @@ const page = () => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <button className="bg-black text-white px-4 py-2 text-xl text-bold rounded-tr-xl rounded-bl-xl hover:bg-rose/50been ">  
+        <button className="bg-black text-white px-4 py-2 text-xl text-bold rounded-tr-xl rounded-bl-xl hover:bg-rose/50 ">  
           Add task
         </button>
         <input
